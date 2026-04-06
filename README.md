@@ -36,7 +36,7 @@ This script will automatically create the database schema (`finance.db`) and see
 python init_db.py
 ```
 *Initial Admin Credentials:*
-* **Email:** `admin@finance.local`
+* **Email:** `admin@finance.com`
 * **Password:** `adminpassword`
 
 ### 4. Run the Application
