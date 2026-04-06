@@ -49,6 +49,7 @@ uvicorn main:app --reload
 Once the server is running, you can explore, test, and view the automatically generated Swagger API documentation at:
 * **Interactive Docs (Swagger UI):** http://127.0.0.1:8000/docs
 * **Alternative Docs (ReDoc):** http://127.0.0.1:8000/redoc
+*  **Live URL : **https://finance-dashboard-api-h66a.onrender.com/docs**
 
 ## App Structure
 * `core/`: Application settings, database connection, JWT authorization, and role dependency logic.
