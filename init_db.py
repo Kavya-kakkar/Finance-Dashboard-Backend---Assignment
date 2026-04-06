@@ -7,17 +7,17 @@ def init_db():
     db = SessionLocal()
     
     # Check if admin already exists
-    admin = db.query(User).filter(User.email == "admin@finance.local").first()
+    admin = db.query(User).filter(User.email == "admin@finance.com").first()
     if not admin:
         admin_user = User(
             name="Admin User",
-            email="admin@finance.local",
+            email="admin@finance.com",
             hashed_password=get_password_hash("adminpassword"),
             role=RoleEnum.Admin
         )
         db.add(admin_user)
         db.commit()
-        print("Created initial admin: admin@finance.local / adminpassword")
+        print("Created initial admin: admin@finance.com / adminpassword")
     else:
         print("Admin user already exists.")
     
